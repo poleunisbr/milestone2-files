@@ -25,7 +25,7 @@ class Item(Base):
     name = Column(String, index=True)
 
 # Create PostgreSQL database engine
-DATABASE_URL = "postgresql://bryan:pass@192.168.1.176:5432/name"
+DATABASE_URL = "postgresql://postgres@192.168.56.10:5432/postgres"
 engine = create_engine(DATABASE_URL)
 
 # Define SessionLocal using sessionmaker
